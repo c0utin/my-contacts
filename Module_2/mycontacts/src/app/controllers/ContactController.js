@@ -1,6 +1,7 @@
 class ContactController {
-  index() {
+  index(request, response) {
     // listar todos os registros
+    response.send('Send from ContactController');
   }
 
   show() {
