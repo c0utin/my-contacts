@@ -25,6 +25,19 @@ class ContactController {
   update() {
     // editar um programa
   }
+
+  async delete(request, response) {
+    const { id } = request.params;
+    const contact = await ContactsResitory.findById(id);
+
+    if (!contact) {
+      // 404: not found
+      return response.status(404).json({ error: 'User not found' });
+    }
+    await ContactsResitory.delete(id);
+    // 204: no content
+    response.sendStatus(204);
+  }
 }
 
 module.exports = new ContactController();
