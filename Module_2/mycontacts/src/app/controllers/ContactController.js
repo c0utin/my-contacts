@@ -23,7 +23,11 @@ class ContactController {
       name, email, phone, category_id,
     } = request.body;
 
-    const contactExists = await ContactsRepository.FindByEmail(email);
+    if (!name) {
+      return response.status(400).json({ error: 'Name is required' });
+    }
+
+    const contactExists = await ContactsRepository.findByEmail(email);
 
     if (contactExists) {
       return response.status(400).json({ error: 'This email is already been taken' });
