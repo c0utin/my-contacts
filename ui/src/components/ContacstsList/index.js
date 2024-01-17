@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import { Container, Header, ListContainer, Card } from "./styles";
 
 import arrow from "../../assets/images/icons/arrow.svg";
 import edit from "../../assets/images/icons/edit.svg";
 import trash from "../../assets/images/icons/trash.svg";
+=======
+import { Container, Header } from "./styles";
+>>>>>>> 6849c52 (feat: header contacts list)
 
 export default function ContatcsList() {
   return (
@@ -11,6 +15,7 @@ export default function ContatcsList() {
         <strong>3 Contacts</strong>
         <a href="/">New contact</a>
       </Header>
+<<<<<<< HEAD
       <ListContainer>
         <header>
           <button type="button">
@@ -38,6 +43,8 @@ export default function ContatcsList() {
           </button>
         </div>
       </Card>
+=======
+>>>>>>> 6849c52 (feat: header contacts list)
     </Container>
   );
 }
