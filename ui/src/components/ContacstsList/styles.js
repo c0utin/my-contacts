@@ -10,10 +10,7 @@ export const Header = styled.header`
   justify-content: space-between;
 
   strong {
-<<<<<<< HEAD
-=======
     color: #222;
->>>>>>> 6849c52 (feat: header contacts list)
     font-size: 24px;
   }
 
@@ -32,7 +29,6 @@ export const Header = styled.header`
     }
   }
 `;
-<<<<<<< HEAD
 
 export const ListContainer = styled.div`
   margin-top: 24px;
@@ -102,5 +98,3 @@ export const Card = styled.div`
     }
   }
 `;
-=======
->>>>>>> 6849c52 (feat: header contacts list)
