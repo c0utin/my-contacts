@@ -16,6 +16,6 @@ export default function PageHeader({ title }) {
   );
 }
 
-PageHeader.PropTypes = {
+PageHeader.propTypes = {
   title: PropTypes.string.isRequired,
 };
